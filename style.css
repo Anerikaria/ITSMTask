@@ -83,8 +83,6 @@
   @media (max-width: 37.5em) {
     .taskmain {
       width: 99%;
-      border: 8px ridge;
-      border-radius: 4rem;
       background: var(--gardient-secondary) padding-box, var(--gradient-primary) border-box; 
       border-color: transparent;
       padding: 0.2rem;
@@ -211,6 +209,12 @@
     height: 3rem;
     clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
   }
+
+  @media (max-width: 37.5em) {
+    .user-form__submit::before {
+      top:3rem;
+    }
+  }
   
   .user-form__submit::after{
     content: "";
@@ -224,6 +228,13 @@
     height: 3rem;
     clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
   }
+
+  @media (max-width: 37.5em) {
+    .user-form__submit::after {
+      top:3rem;
+    }
+  }
+  
   .user-form__radiogroup {
     display: var(--display-flex);
     flex-direction: var(--flex-direction-column);
