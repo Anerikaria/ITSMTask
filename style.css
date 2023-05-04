@@ -50,8 +50,8 @@
   }
   
   body {
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     font-family: var(--font-family);
     font-weight: var(--font-weight-normal);
     line-height: var(--line-height);
@@ -188,7 +188,7 @@
     display: inline-block;
     line-height: 2.5rem;
     border-radius: 2rem;
-    padding: 3rem 4rem 3rem 4rem; /* Adjust padding as needed */
+    padding: 3rem 6rem 3rem 6rem; /* Adjust padding as needed */
     cursor: pointer;
     text-transform: uppercase;
     margin-top: 5rem;
