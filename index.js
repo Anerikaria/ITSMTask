@@ -13,7 +13,7 @@ const email = document.getElementById('email');
 
 //function for email validation
 function isValidEmail(email) {
-    const regex = /^\S+@\S+\.\S+$/;
+    const regex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
     return regex.test(email);
   }
   
