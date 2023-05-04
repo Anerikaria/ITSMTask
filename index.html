@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITSM-Task</title>
+
+    <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/style.css">
+  <script defer src="/index.js?v=1"></script> <!--cacher busting technique :- ?v=1-->
+
+</head>
+<body>
+    <main>
+        <div class="taskmain">
+        <header class="header">
+            <nav class="navigation">
+                <img src="/images/Australia logo.svg" alt="Representing Australia Logo" class="Au__logo">
+            </nav>
+        </header>
+        <section class="sectiontask">
+            <form action="/" class="user-form" method="post">
+                <h2 class="user-form__heading">Please enter your<span> details</span> below.</h2>
+                <br/>
+                <h4>Mandatory field are marked as *</h4>
+
+                <div>
+                    <input type="text" name="firstname" id="firstname" placeholder="Please enter your first name" class="user-form__txtinput user-form__firstname"  aria-required="true" aria-describedby="error-firstname">
+                    <label for="firstname" id="error-firstname"  class="user-form__label error__message">Please enter your First Name</label>
+                </div>
+
+                <div>
+                    <input type="text" name="lastname" id="lastname" placeholder="Please enter your last name" class="user-form__txtinput user-form__lastname"  aria-required="true" aria-describedby="error-lastname">
+                    <label for="lastname" id="error-lastname"  class="user-form__label error__message">Please enter your Last Name</label>
+                </div>
+
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Please enter your email" class="user-form__txtinput user-form__email" aria-required="true" aria-describedby="error-email">
+                    <label for="email" id="error-email" aria-describedby="error-email" class="user-form__label error__message">Please enter your Email</label>
+                </div>
+
+                <div class="user-form__radiogroup" id="user-form__radiogroup">
+                    <h4 for="">I am a resident of</h4>
+                    <ul class="user-form__options">
+                        <li class="user-form__option">
+                            <input type="radio" name="radio" id="australia" value="australia" class="user-form__option-input" aria-required="true"  >
+                            <label for="australia"  class="user-form__option-label">Australia</label>
+                        </li>
+                        <li class="user-form__option">
+                            <input type="radio" name="radio" id="new zealand" value="new zealand" class="user-form__option-input" aria-required="true">
+                            <label for="new zealand" class="user-form__option-label">New zealand</label>
+                        </li>
+                        <li class="user-form__option">
+                            <input type="radio" name="radio" id="livingoutside" value="livingoutside" class="user-form__option-input"  aria-required="true">
+                            <label for="livingoutside"  class="user-form__option-label">Outside of Australia and New Zealand</label>
+                        </li>
+                    </ul>
+                    <label for="user-form__radiogroup"  class="radio-error__label error__message">Please select any of these radio buttons</label>
+                </div>
+
+                <div class="user-form__consent">
+                    <input type="checkbox" name="checkbox" id="checkbox" class="user-form__consent-input" aria-required="true" aria-describedby="error-consent">
+                    <label for="checkbox" class="user-form__consent-label">
+                        I confirm I am over 19, accept the terms and conditions, and give consent to receive relevant condition,
+                         and give consent to receive relevant email communication
+                    </label>
+                    <br/>
+                    <label for="checkbox" id="error-consent" class="user-form__chklabel error__message">Your consent is required to proceed</label>
+                </div>
+                <button type="submit" class="user-form__submit">Click here to submit your details</button>
+            </form>
+        </section>
+    </div>
+    </main>
+</body>
+</html>
