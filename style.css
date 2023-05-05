@@ -41,12 +41,11 @@
   * {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
   }
   
   html {
     font-size: 62.5%;
-    box-sizing: border-box;
   }
   
   body {
@@ -62,6 +61,12 @@
     body {
       width: 100%;
       padding: 0;
+    }
+  }
+
+  @media(max-width: 112.5em){
+    body{
+      display: flex;
     }
   }
   
@@ -82,10 +87,10 @@
   
   @media (max-width: 37.5em) {
     .taskmain {
-      width: 99%;
+      width: 100%;
       background: var(--gardient-secondary) padding-box, var(--gradient-primary) border-box; 
       border-color: transparent;
-      padding: 0.2rem;
+      padding: 4rem;
       margin: 0rem;
       /* padding-left: 4rem; */
     }
