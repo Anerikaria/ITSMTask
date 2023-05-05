@@ -34,7 +34,9 @@
 
     /* //gradient */
     --gradient-primary:linear-gradient(to bottom left, var(--secondary-color), #197cc5, #1c7dc4, #177ec2, var(--primary-color), #217cc2, #227ebf, #257fbe, #297db9,#3280b1,#3280b1,#4782a0,#4a83a0,#4b839e,#3881ae,#327fb3) ;
-    --gardient-secondary : linear-gradient(to bottom left, #eee, #eee)
+    --gardient-secondary : linear-gradient(to bottom left, #eee, #eee);
+    --gradient-tertiary:linear-gradient(to bottom , var(--secondary-color), #197cc5, #1c7dc4, #177ec2, var(--primary-color), #217cc2, #227ebf,#3280b1,#4782a0,#4a83a0,#4b839e,#3881ae,#327fb3) ;
+
   }
   
   /* Reset and base styles */
@@ -129,10 +131,17 @@
   }
   
   .user-form__heading span {
-    color: var(--primary-color);
     text-shadow: none;
     font-weight: var(--font-weight-bold);
-    /* background-image: var(--gardient-secondary); */
+    background-image: var(--gradient-tertiary); 
+    background-size: 100%;
+    background-repeat: repeat;
+    background-clip: text;
+    background-color: var(--primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip:text;
+    -moz-text-fill-color:transparent;
   }
   
   .user-form__txtinput {
