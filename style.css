@@ -34,48 +34,39 @@
 
     /* //gradient */
     --gradient-primary:linear-gradient(to bottom left, var(--secondary-color), #197cc5, #1c7dc4, #177ec2, var(--primary-color), #217cc2, #227ebf, #257fbe, #297db9,#3280b1,#3280b1,#4782a0,#4a83a0,#4b839e,#3881ae,#327fb3) ;
-    --gardient-secondary : linear-gradient(to bottom left, #ffff, #ffff)
+    --gardient-secondary : linear-gradient(to bottom left, #eee, #eee)
   }
   
   /* Reset and base styles */
   * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
   }
   
   html {
     font-size: 62.5%;
+    box-sizing: border-box;
+
   }
   
   body {
     /* display: flex; */
     /* justify-content: center; */
+    font-weight: 300;
     font-family: var(--font-family);
     font-weight: var(--font-weight-normal);
     line-height: var(--line-height);
 
   }
   
-  @media (max-width: 37.5em) {
-    body {
-      width: 100%;
-      padding: 0;
-    }
-  }
-
-  @media(max-width: 112.5em){
-    body{
-      display: flex;
-    }
-  }
   
   /* Task main container */
   .taskmain {
       border: 8px ridge;
       background: var(--gardient-secondary) padding-box, var(--gradient-primary) border-box; 
       padding: 7rem;
-      margin: 3rem 40rem 2rem 40rem;
+      margin: 3rem 20rem 2rem 20rem;
       box-shadow: var(--box-shadow);
       border-color: transparent;
       border-radius: 4rem;
@@ -90,7 +81,7 @@
       width: 100%;
       background: var(--gardient-secondary) padding-box, var(--gradient-primary) border-box; 
       border-color: transparent;
-      padding: 4rem;
+      padding: 1.5rem;
       margin: 0rem;
       /* padding-left: 4rem; */
     }
@@ -98,35 +89,36 @@
   
   /* Navigation */
   .navigation {
-    display: flex;
-    height: 20rem;
-    justify-content: center;
-    padding: 0 6rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 0 6rem;
+  z-index: 100;
   }
   
   @media (max-width: 37.5em) {
     .navigation {
       justify-content: center;
-      padding: 6rem;
+      padding: 0rem;
       align-items: center;
     }
-  
-    .navigation img {
-      height: 12rem;
-    }
+
+  }
+
+  .Au__logo{
+    height: 9rem;
   }
   
   /* User form */
 .user-form {
     font-size: var(--font-size);
     text-align: center;
-    margin: 5rem 0rem 5rem 0rem;
+    margin: 4rem 0rem 4rem 0rem;
   }
   
   @media (max-width: 37.5em) {
     .user-form {
-      margin: 5rem;
-      padding: 1rem;
+      padding: 3rem;
     }
   }
   
@@ -191,13 +183,12 @@
     display: inline-block;
     line-height: 2.5rem;
     border-radius: 2rem;
-    padding: 3rem 6rem 3rem 6rem; /* Adjust padding as needed */
+    padding: 4rem; 
     cursor: pointer;
     text-transform: uppercase;
-    margin-top: 5rem;
+    margin-top: 4rem;
     border: none;
     font-size: 2.5rem;
-    box-shadow: 0 0 6rem rgba(0, 0, 0, 0.5);
     background-color: var(--primary-color);
     color: var(--font-white);
   }
@@ -206,9 +197,9 @@
     content: "";
     position: absolute;
     top: 0;
-    left: 14px;
-    margin-top: 5rem;
-    padding-left: 2rem;
+    left: 8px;
+    margin-top: 6rem;
+    padding-left: 2.5rem;
     background: #fff border-box;
     width: .5rem;
     height: 3rem;
@@ -217,7 +208,7 @@
 
   @media (max-width: 37.5em) {
     .user-form__submit::before {
-      top:3rem;
+      top:1.5rem;
     }
   }
   
@@ -225,9 +216,9 @@
     content: "";
     position: absolute;
     top: 0;
-    margin-top: 5rem;
-    right: 14px;
-    padding-left: 2rem;
+    margin-top: 6rem;
+    right: 8px;
+    padding-left: 2.5rem;
     background: #fff border-box;
     width: .5rem;
     height: 3rem;
@@ -236,7 +227,7 @@
 
   @media (max-width: 37.5em) {
     .user-form__submit::after {
-      top:3rem;
+      top:1.5rem;
     }
   }
   
