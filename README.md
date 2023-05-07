@@ -9,5 +9,4 @@ JS work - =>. validations, submitting the form and preventing default submission
 HTML : =>. Semantic HTML used with BEM methodology =>. also uses for accessibility putpose
 
 CSS : => I have used CSS only for make it aligned and attractive.
-Logo created using Adobe Illustrator
 
